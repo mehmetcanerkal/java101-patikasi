@@ -12,11 +12,18 @@ public class KDV {
 
         float kdv;
         kdv = (fiyat*18)/100;
+        float kdv1;
+        kdv1 = (fiyat*8)/100;
 
         float toplam;
         toplam = kdv + fiyat;
 
-        System.out.println("KDV'li Toplam Fiyat : " + toplam);
+        float toplam1;
+        toplam1 = kdv1 + fiyat;
+
+        float str = (fiyat>1000) ? toplam1 : toplam;
+        System.out.println("KDV'li Toplam Fiyat : " + str);
+
 
 
     }
